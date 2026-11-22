@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1024, initial-scale=1">
+<title>The World in One Day — Saturday 21 November 2026</title>
+<style>
+* { box-sizing: border-box; }
+html, body { width: 1024px; height: 1024px; margin: 0; overflow: hidden; }
+body { background: #f3eedf; color: #202820; font-family: Arial, Helvetica, sans-serif; }
+.page { width: 1024px; height: 1024px; padding: 20px 30px 18px; display: flex; flex-direction: column; gap: 6px; }
+.masthead { height: 90px; border-bottom: 3px solid #202820; position: relative; }
+.kicker { font-size: 11px; line-height: 14px; font-weight: 700; letter-spacing: 2px; color: #a04431; }
+h1 { font: 700 39px/1.08 Georgia, 'Times New Roman', serif; letter-spacing: -.9px; margin: 1px 0 3px; }
+.summary { font: 14px/18px Georgia, 'Times New Roman', serif; color: #4e554b; }
+.edition { position: absolute; right: 0; top: 2px; font-size: 10px; letter-spacing: 1px; color: #65675c; }
+.timeline { height: 48px; padding: 4px 0 2px; border-bottom: 1px solid #a9a38f; }
+.section-label { color: #a04431; font-weight: 700; font-size: 10px; letter-spacing: 1.6px; }
+.timeline-row { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 5px; margin-top: 4px; }
+.stop { min-width: 0; border-left: 2px solid #b94f38; padding-left: 5px; font-size: 11px; line-height: 13px; color: #4d5249; }
+.stop b { color: #202820; font-size: 11px; }
+.stats { height: 66px; background: #e8e1ce; border-top: 1px solid #d4cbb4; border-bottom: 1px solid #d4cbb4; padding: 5px 10px 4px; display: grid; grid-template-columns: repeat(6,1fr); gap: 9px; }
+.stat { border-right: 1px solid #c5bda8; padding-right: 7px; }
+.stat:last-child { border: 0; }
+.num { font: 700 25px/27px Georgia, 'Times New Roman', serif; color: #a04431; }
+.caption { font-size: 13px; line-height: 14px; color: #41473f; }
+.regions { height: 18px; text-align: center; white-space: nowrap; font-size: 10.3px; line-height: 16px; letter-spacing: .1px; color: #53574d; border-bottom: 1px solid #b8b09c; }
+.regions b { color: #252c25; }
+.leads { height: 235px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.lead { background: #f8f5eb; border: 1px solid #d7cfbb; padding: 9px 11px 8px; position: relative; overflow: hidden; }
+.tagline { display: flex; align-items: center; gap: 7px; height: 15px; font-size: 9.4px; font-weight: 700; letter-spacing: 1px; color: #7f392d; white-space: nowrap; }
+.badge { border: 1px solid #49765e; color: #35664e; font-size: 8.5px; letter-spacing: .8px; line-height: 13px; padding: 0 5px; border-radius: 8px; font-weight: 700; }
+.diagram { height: 58px; margin: 3px 0 4px; border-bottom: 1px solid #ded6c3; display: flex; align-items: center; justify-content: center; }
+.diagram svg { height: 50px; width: auto; }
+.lead h2 { font: 700 25px/25px Georgia, 'Times New Roman', serif; margin: 0 0 5px; letter-spacing: -.55px; }
+.lead p { max-width: 100%; padding-bottom: 18px; font-size: 12px; line-height: 15px; color: #41473f; margin: 0; }
+.sources { position: absolute; left: 11px; bottom: 7px; color: #8a4c3b; font-size: 11px; letter-spacing: .1px; font-weight: 700; }
+.tiles { height: 270px; display: grid; grid-template-columns: repeat(5,1fr); grid-template-rows: repeat(2,1fr); gap: 7px; }
+.tile { background: #eee8d8; border-top: 2px solid #6e7867; padding: 5px 8px 4px; position: relative; overflow: hidden; }
+.tile-head { display: flex; flex-direction: column; align-items: flex-start; gap: 1px; height: 23px; }
+.tile-tag { color: #7f392d; font-weight: 700; font-size: 8px; line-height: 10px; letter-spacing: .25px; white-space: nowrap; }
+.tile-badge { color: #35664e; border: 1px solid #6d927b; border-radius: 6px; font-size: 7px; line-height: 9px; padding: 0 3px; font-weight: 700; white-space: nowrap; }
+.glyph { height: 23px; display: flex; align-items: center; gap: 4px; color: #a04431; font: 700 15px/17px Georgia, 'Times New Roman', serif; }
+.glyph small { display: inline; font: 700 8px/9px Arial, sans-serif; letter-spacing: .35px; color: #566252; }
+.tile h3 { height: 34px; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; font: 700 15px/17px Georgia, 'Times New Roman', serif; margin: 3px 0; }
+.tile p { font-size: 11px; line-height: 13px; color: #4b5047; margin: 0; }
+.also { height: 150px; border-top: 2px solid #202820; padding-top: 5px; }
+.also h2 { font: 700 14px/17px Georgia, 'Times New Roman', serif; letter-spacing: 1px; margin: 0 0 4px; color: #a04431; }
+.list { display: grid; grid-template-columns: 1fr 1fr; grid-auto-flow: column; grid-template-rows: repeat(7,16px); column-gap: 18px; }
+.item { font-size: 13px; line-height: 15px; letter-spacing: -.35px; white-space: nowrap; color: #3e443c; }
+.item b { color: #a04431; }
+.item em { color: #697062; font-style: normal; }
+footer { min-height: 56px; flex: 1; border-top: 1px solid #b9b09b; padding-top: 5px; font-size: 11px; line-height: 14px; color: #51564d; }
+footer strong { color: #283128; }
+.future { color: #a04431; font-weight: 700; margin-top: 3px; }
+svg text { font-family: Arial, Helvetica, sans-serif; }
+</style>
+</head>
+<body>
+<main class="page">
+  <header class="masthead">
+    <div class="kicker">THE WORLD IN ONE DAY · 35 STORIES · 9 REGIONS</div>
+    <div class="edition">GLOBAL EDITION&nbsp; / &nbsp;SATURDAY</div>
+    <h1>Saturday 21 November 2026</h1>
+    <div class="summary">Iran hits Bahrain bases · a deep quake shakes Peru · COP31 runs into overtime</div>
+  </header>
+  <section class="timeline" aria-label="Timeline in UTC">
+    <div class="section-label">THE DAY, IN UTC</div>
+    <div class="timeline-row">
+      <div class="stop"><b>00:09</b> Peru quake M6.7,<br>Junin (USGS)</div>
+      <div class="stop"><b>02:15</b> Finland restricts<br>Gulf airspace</div>
+      <div class="stop"><b>04:00</b> Las Vegas qualifying:<br>Verstappen P1</div>
+      <div class="stop"><b>05:00</b> Tanker hit 11 nm N<br>of Khasab</div>
+      <div class="stop"><b>15:30</b> Antara reports<br>EU pact signed</div>
+      <div class="stop"><b>17:30</b> Newcastle v Arsenal<br>kicks off, 2-2</div>
+    </div>
+  </section>
+  <section class="stats" aria-label="Day in numbers">
+    <div class="stat"><div class="num">6.7</div><div class="caption">Peru quake magnitude (USGS)</div></div>
+    <div class="stat"><div class="num">2</div><div class="caption">tankers hit off Khasab (UKMTO)</div></div>
+    <div class="stat"><div class="num">128</div><div class="caption">nations backing Geneva robot-arms talks</div></div>
+    <div class="stat"><div class="num">90.4%</div><div class="caption">tariff lines duty-free (EU-CEPA)</div></div>
+    <div class="stat"><div class="num">82,500</div><div class="caption">marchers in France (ministry)</div></div>
+    <div class="stat"><div class="num">37-12</div><div class="caption">England over New Zealand</div></div>
+  </section>
+  <div class="regions"><b>EUROPE</b> 7 &nbsp;·&nbsp; <b>MIDDLE EAST</b> 5 &nbsp;·&nbsp; <b>AFRICA</b> 4 &nbsp;·&nbsp; <b>SOUTH ASIA</b> 5 &nbsp;·&nbsp; <b>EAST ASIA</b> 2 &nbsp;·&nbsp; <b>SE ASIA</b> 2 &nbsp;·&nbsp; <b>AMERICAS</b> 5 &nbsp;·&nbsp; <b>OCEANIA</b> 3 &nbsp;·&nbsp; <b>GLOBAL</b> 2</div>
+  <section class="leads" aria-label="Lead stories">
+    <article class="lead">
+      <div class="tagline">BAHRAIN · HORMUZ · IRAN WAR <span class="badge">CONFIRMED</span></div>
+      <div class="diagram">
+        <svg width="280" height="70" viewBox="0 0 280 70" role="img" aria-label="Persian Gulf map with Bahrain and Strait of Hormuz marked">
+          <path d="M8 15 Q38 4 67 17 L91 31 113 29 132 39 149 35 167 29 184 35 198 29 216 32 230 26 250 31 273 22 L273 57 Q245 62 224 55 L205 52 187 57 165 49 143 54 120 46 101 48 81 37 61 34 42 26 19 31Z" fill="#d9d5bc" stroke="#78806b" stroke-width="1.3"/>
+          <path d="M33 26 Q68 35 95 40 Q126 45 150 43 Q178 43 201 44 Q226 46 253 35" fill="none" stroke="#8faeb0" stroke-width="14" stroke-linecap="round"/>
+          <path d="M33 26 Q68 35 95 40 Q126 45 150 43 Q178 43 201 44 Q226 46 253 35" fill="none" stroke="#dbe8e2" stroke-width="10" stroke-linecap="round"/>
+          <circle cx="146" cy="39" r="3.5" fill="#b94f38"/><text x="130" y="24" font-size="8" fill="#30382e" font-weight="700">BAHRAIN</text>
+          <circle cx="247" cy="36" r="3.5" fill="#b94f38"/><text x="216" y="21" font-size="8" fill="#30382e" font-weight="700">HORMUZ</text>
+          <path d="M71 6l2 6 6 2-6 2-2 6-2-6-6-2 6-2zM206 4l2 6 6 2-6 2-2 6-2-6-6-2 6-2z" fill="#b94f38"/>
+          <text x="9" y="66" font-size="7.5" fill="#687265" letter-spacing="1">PERSIAN GULF</text>
+        </svg>
+      </div>
+      <h2>Iran strikes Bahrain bases; tankers hit off Oman</h2>
+      <p>IRGC says it hit US radar at two bases; Bahrain reports a civilian plant burned. UKMTO: two tankers struck off Khasab.</p>
+      <div class="sources">Al Jazeera · Anadolu · Reuters · UKMTO</div>
+    </article>
+    <article class="lead">
+      <div class="tagline">JUNIN, PERU · EARTHQUAKE <span class="badge">CONFIRMED</span></div>
+      <div class="diagram">
+        <svg width="280" height="70" viewBox="0 0 280 70" role="img" aria-label="Layered earth strata, quake depth and epicentre near Ondores">
+          <path d="M4 20 Q50 14 90 20 T180 19 T276 17 L276 68 4 68Z" fill="#d8c89e"/>
+          <path d="M4 31 Q50 24 93 33 T184 29 T276 32 L276 68 4 68Z" fill="#c4a77b"/>
+          <path d="M4 44 Q52 38 95 46 T186 43 T276 46 L276 68 4 68Z" fill="#9f8769"/>
+          <path d="M4 57 Q55 52 98 58 T190 56 T276 59 L276 68 4 68Z" fill="#786c5d"/>
+          <circle cx="139" cy="40" r="13" fill="none" stroke="#f5efdc" stroke-width="1.5"/><circle cx="139" cy="40" r="6" fill="none" stroke="#a04431" stroke-width="2"/><circle cx="139" cy="40" r="2" fill="#a04431"/>
+          <path d="M139 47V64" stroke="#f5efdc" stroke-width="1.5" stroke-dasharray="2 2"/><text x="151" y="43" font-size="8" fill="#292f28" font-weight="700">ONDORES</text>
+          <rect x="7" y="5" width="76" height="16" rx="2" fill="#f3eedf"/><text x="13" y="16" font-size="9" fill="#a04431" font-weight="700">108–129 km</text>
+          <text x="216" y="66" font-size="7.5" fill="#f3eedf" letter-spacing="1">EARTH STRATA</text>
+        </svg>
+      </div>
+      <h2>Deep 6.7 earthquake shakes central Peru</h2>
+      <p>Centred near Ondores and felt in Lima; landslides and minor damage, no deaths and no tsunami threat.</p>
+      <div class="sources">USGS · IGP · AFP · Anadolu</div>
+    </article>
+    <article class="lead">
+      <div class="tagline">ANTALYA, TURKIYE · CLIMATE <span class="badge">CONFIRMED</span></div>
+      <div class="diagram">
+        <svg width="280" height="70" viewBox="0 0 280 70" role="img" aria-label="Calendar from November 9 to 21 with an extra day and thermometer at 1.5 degrees Celsius">
+          <text x="4" y="12" font-size="8" fill="#6c7264" font-weight="700" letter-spacing="1">NOVEMBER</text>
+          <g fill="#e5dec9" stroke="#c4baa3" stroke-width=".7">
+            <rect x="4" y="17" width="24" height="20" rx="2"/><rect x="31" y="17" width="24" height="20" rx="2"/><rect x="58" y="17" width="24" height="20" rx="2"/><rect x="85" y="17" width="24" height="20" rx="2"/><rect x="112" y="17" width="24" height="20" rx="2"/><rect x="139" y="17" width="24" height="20" rx="2"/><rect x="166" y="17" width="24" height="20" rx="2"/><rect x="193" y="17" width="24" height="20" rx="2"/><rect x="220" y="17" width="24" height="20" rx="2"/><rect x="247" y="17" width="24" height="20" rx="2"/>
+          </g>
+          <g font-size="8" fill="#4d554b" text-anchor="middle"><text x="16" y="30">9</text><text x="43" y="30">10</text><text x="70" y="30">11</text><text x="97" y="30">12</text><text x="124" y="30">13</text><text x="151" y="30">14</text><text x="178" y="30">15</text><text x="205" y="30">16</text><text x="232" y="30">17</text><text x="259" y="30">18</text></g>
+          <rect x="4" y="41" width="24" height="20" rx="2" fill="#e5dec9" stroke="#c4baa3"/><rect x="31" y="41" width="24" height="20" rx="2" fill="#e5dec9" stroke="#c4baa3"/><rect x="58" y="41" width="24" height="20" rx="2" fill="#a04431"/><text x="16" y="54" text-anchor="middle" font-size="8" fill="#4d554b">19</text><text x="43" y="54" text-anchor="middle" font-size="8" fill="#4d554b">20</text><text x="70" y="54" text-anchor="middle" font-size="8" fill="#fff8e8" font-weight="700">21</text>
+          <text x="97" y="53" font-size="10" fill="#a04431" font-weight="700">+1 DAY</text>
+          <path d="M227 46a6 6 0 0 0-12 0v12a10 10 0 1 0 12 0z" fill="#f8f5eb" stroke="#687565" stroke-width="1.4"/><path d="M221 49v15" stroke="#b94f38" stroke-width="4" stroke-linecap="round"/><circle cx="221" cy="62" r="5" fill="#b94f38"/><text x="234" y="57" font-size="9" fill="#30382e" font-weight="700">1.5°C</text>
+        </svg>
+      </div>
+      <h2>COP31 climate talks run into overtime</h2>
+      <p>Talks in Antalya ran through Saturday over fossil fuels and finance; approval session set for Sunday 06:00 GMT.</p>
+      <div class="sources">Reuters · AFP · Anadolu</div>
+    </article>
+  </section>
+  <section class="tiles" aria-label="More confirmed and official stories">
+    <article class="tile"><div class="tile-head"><span class="tile-tag">GULF OF FINLAND · SECURITY</span><span class="tile-badge">CONFIRMED</span></div><div class="glyph">2<small>DRONES</small></div><h3>Drones hit Russian ship off Finland</h3><p>Crew evacuated; Finland suspects Ukraine.</p></article>
+    <article class="tile"><div class="tile-head"><span class="tile-tag">GENEVA · ARMS CONTROL</span><span class="tile-badge">CONFIRMED</span></div><div class="glyph">128<small>NATIONS</small></div><h3>128 nations back killer-robot talks</h3><p>US, Russia, Israel opposed binding rules.</p></article>
+    <article class="tile"><div class="tile-head"><span class="tile-tag">SINALOA · MEXICO · CRIME</span><span class="tile-badge">CAPTURED · FBI TOP TEN</span></div><div class="glyph">FBI<small>TOP TEN</small></div><h3>Mexico captures cartel boss Chapo Isidro</h3><p>FBI most-wanted; seized in Guasave.</p></article>
+    <article class="tile"><div class="tile-head"><span class="tile-tag">INDONESIA-EU · TRADE</span><span class="tile-badge">OFFICIAL</span></div><div class="glyph">90.4%<small>DUTY-FREE LINES</small></div><h3>Indonesia and EU sign trade pact</h3><p>Signed in Brussels; in force from 2027.</p></article>
+    <article class="tile"><div class="tile-head"><span class="tile-tag">BASRA, IRAQ · DISASTER</span><span class="tile-badge">CONFIRMED</span></div><div class="glyph">4 DEAD<small>IN FIRE</small></div><h3>Basra power-station fire kills 4</h3><p>800 MW Hartha plant shut; 35 injured.</p></article>
+    <article class="tile"><div class="tile-head"><span class="tile-tag">TAIPEI · MARKETS</span><span class="tile-badge">OFFICIAL</span></div><div class="glyph">−18%<small>TAIEX, WEEK</small></div><h3>Taiwan curbs short-selling after rout</h3><p>FSC acts after worst week since 1991.</p></article>
+    <article class="tile"><div class="tile-head"><span class="tile-tag">LONDON · RUGBY</span><span class="tile-badge">OFFICIAL</span></div><div class="glyph">ENG 37-12<small>NZL</small></div><h3>England beat All Blacks 37-12</h3><p>New Zealand's heaviest loss to England.</p></article>
+    <article class="tile"><div class="tile-head"><span class="tile-tag">ABUJA · FOOTBALL</span><span class="tile-badge">OFFICIAL</span></div><div class="glyph">54/54<small>BACK INFANTINO</small></div><h3>All 54 CAF members back Infantino</h3><p>FIFA vote set for March 2027 in Rabat.</p></article>
+    <article class="tile"><div class="tile-head"><span class="tile-tag">MASTUNG, PAKISTAN · SECURITY</span><span class="tile-badge">OFFICIAL</span></div><div class="glyph">15<small>MILITANTS KILLED</small></div><h3>Pakistan says 15 militants killed</h3><p>Balochistan raid; hideouts destroyed.</p></article>
+    <article class="tile"><div class="tile-head"><span class="tile-tag">LAS VEGAS · FORMULA 1</span><span class="tile-badge">OFFICIAL</span></div><div class="glyph">P1<small>VERSTAPPEN</small></div><h3>Verstappen takes pole in Las Vegas</h3><p>Antonelli docked 5 places; Russell 2nd.</p></article>
+  </section>
+  <section class="also" aria-label="Also on Saturday">
+    <h2>ALSO ON SATURDAY 21 NOVEMBER 2026</h2>
+    <div class="list">
+      <div class="item"><b>1</b> Gaza City: drone strike on food-aid van kills three <em>(AJ, Reuters)</em></div>
+      <div class="item"><b>2</b> Tehran: Iran recalls 168 killed in US strike on a school <em>(Anadolu)</em></div>
+      <div class="item"><b>3</b> Paris: 82,500 march on living costs; Lisbon too <em>(AJ, ministry)</em></div>
+      <div class="item"><b>4</b> Zagreb: thousands protest over hospital death <em>(AJ)</em></div>
+      <div class="item"><b>5</b> Pas-de-Calais: floods swamp 850 homes; 85 roads shut <em>(Anadolu)</em></div>
+      <div class="item"><b>6</b> Newcastle: Arsenal held 2-2; Chelsea lose 4-1 to Leeds <em>(AJ)</em></div>
+      <div class="item"><b>7</b> Dublin: Ireland edge South Africa 20-17 <em>(RNZ)</em></div>
+      <div class="item"><b>8</b> Cardiff: Wallabies end losing run, beat Wales 22-19 <em>(ABC)</em></div>
+      <div class="item"><b>9</b> Washington: Trump appears to confirm FBI database breach <em>(AJ, NBC)</em></div>
+      <div class="item"><b>10</b> Cleveland: Harden passes Bryant on NBA 50-point list <em>(AP)</em></div>
+      <div class="item"><b>11</b> Melbourne: Cricket Australia backs Cummins as captain <em>(AFP)</em></div>
+      <div class="item"><b>12</b> Doha: Cameroon lose U17 World Cup opener 2-1 <em>(Africanews)</em></div>
+      <div class="item"><b>13</b> Blue Nile: Sudan army says it is restoring order <em>(Anadolu)</em></div>
+      <div class="item"><b>14</b> Dhaka: five more deaths with measles symptoms <em>(Daily Star)</em></div>
+    </div>
+  </section>
+  <footer>
+    <strong>HOW WE CHECKED</strong> — CONFIRMED = 2+ major outlets · OFFICIAL = on the record (officials, results) · Every story here happened, or was first reported, on Saturday 21 November 2026 (UTC). Outlets named beside each story.
+    <div class="future">NOT YET (FUTURE): COP31 approval session (Sun 06:00 GMT), Las Vegas GP race (Sun 04:00 UTC), Liverpool v Man United (Sun).</div>
+  </footer>
+</main>
+</body>
+</html>
